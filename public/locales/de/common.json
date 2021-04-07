@@ -1,0 +1,40 @@
+{
+  "company-navlink": "Unternehmen",
+  "services-navlink": "Leistungen",
+  "sales-navlink": "Verkauf",
+  "contact-navlink": "Kontakt",
+
+  "current-locale": "Deutsch",
+  "change-locale-to": "English",
+
+  "header-title": "Heiner Brinkhege\n Beteiligungsgesellschaft",
+  "header-p1": "Wir sind eine familiengeführte Holdinggesellschaft mit Sitz in Georgsmarienhütte. Zu unserer Firmengruppe gehören mittelständische Unternehmen in ganz Deutschland.",
+  "about-p1": "Die Heiner Brinkhege Beteiligungsgesellschaft mbH & Co. KG (HBB) wurde 1990 von Heiner Brinkhege gegründet. Sie ist die zentrale Dachgesellschaft unserer Unternehmensgruppe und bestimmt ihre strategische Ausrichtung. Die HBB-Gruppe befindet sich zu 100 Prozent im Besitz von Heiner Brinkhege und seinen drei Kindern.",
+  "about-p2": "Als unabhängiges Familienunternehmen denken wir langfristig. Wir profitieren vor allem von unserer Erfahrung, kompetenten und zuverlässigen Mitarbeitern sowie kurzen Entscheidungswegen. In 2020 erwirtschaftete die HBB-Gruppe mit etwa 1.900 Beschäftigten einen Umsatz von mehr als 480 Millionen €.",
+
+  "about-num1": "480 Mio. €",
+  "about-num1-text": "Umsatz",
+  "about-num2": "1.900",
+  "about-num2-text": "Beschäftigte",
+  "about-num3": "30 Mio. €",
+  "about-num3-text": "Investitionen p.a.",
+  "about-current-year": "Stand 2020",
+
+  "companies-p1": "Unsere Unternehmen sind in unterschiedlichen Branchen aktiv: Unter anderem produzieren wir für die Bauindustrie, stellen Druckerzeugnisse für das Verpackungsgewerbe her und bieten Krandienstleistungen an. Hier können Sie mehr über einige unserer Firmen erfahren:",
+
+  "contact-phone": "+49 5401 / 840200",
+  "contact-email": "info@brinkhege.de",
+  "contact-address": "Oeseder Straße 8\n 49124 Georgsmarienhütte",
+
+  "footer-a1": "Impressum",
+  "footer-a2": "Datenschutz",
+  "footer-copyright": "© 2021 HBB GmbH & Co. KG",
+
+  "cookie-text": "Wir verwenden Cookies, um unsere Webseite zu optimieren. Klicken Sie auf  „Ich stimme zu“, um Cookies zu akzeptieren.",
+  "cookie-button": "Ich stimme zu",
+
+  "404-section-heading": "Seite nicht gefunden",
+  "404-title": "404 Seite wurde nicht gefunden",
+  "404-p1": "Leider existiert keine Seite mit dieser Adresse.",
+  "404-button": "Zur Startseite"
+}

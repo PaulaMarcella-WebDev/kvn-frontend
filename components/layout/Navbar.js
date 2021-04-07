@@ -2,7 +2,10 @@ import styles from "../../styles/Navbar.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
+import { useTranslation } from "next-i18next";
+
 const Navbar = () => {
+  const { t } = useTranslation("common");
   return (
     <div className={styles.navbar}>
       <Link href="/">
@@ -17,16 +20,16 @@ const Navbar = () => {
       </Link>
       <ul className="navlinks">
         <li className={styles.navlink}>
-          <Link href="#">Unternehmen</Link>
+          <Link href="#">{t("company-navlink")}</Link>
         </li>
         <li className={styles.navlink}>
-          <Link href="#">Leistungen</Link>
+          <Link href="#">{t("services-navlink")}</Link>
         </li>
         <li className={styles.navlink}>
-          <Link href="#">Verkauf</Link>
+          <Link href="#">{t("sales-navlink")}</Link>
         </li>
         <li className={styles.navlink}>
-          <Link href="#">Kontakt</Link>
+          <Link href="#">{t("contact-navlink")}</Link>
         </li>
       </ul>
     </div>

@@ -1,7 +1,7 @@
-import styles from "header.module.scss";
+import styles from "../../styles/Header.module.scss";
 
 const Header = () => {
-  return <div></div>;
+  return <div className={styles.header}></div>;
 };
 
 export default Header;

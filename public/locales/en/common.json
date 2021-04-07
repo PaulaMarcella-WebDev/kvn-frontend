@@ -1,0 +1,40 @@
+{
+  "company-navlink": "Company",
+  "services-navlink": "Services",
+  "sales-navlink": "Sales",
+  "contact-navlink": "Contact",
+
+  "current-locale": "English",
+  "change-locale-to": "Deutsch",
+
+  "header-title": "Heiner Brinkhege\n Beteiligungsgesellschaft",
+  "header-p1": "We are a family-run company that owns a number of successful medium-sized businesses. Our headquarters are located in Georgsmarienhütte, Germany.",
+  "about-p1": "Heiner Brinkhege founded the Heiner Brinkhege Beteiligungsgesellschaft mbH & Co. KG (HBB) in 1990. Today, this holding firm owns a diverse set of companies in different industries. The holding firm makes strategic decisions for the entire HBB group. Heiner Brinkhege and his three children control 100% of the group’s shares.",
+  "about-p2": "As an independent family-run business, we focus on long-term success. Our strength comes from our experience, our competent employees and a flat hierarchy. Our numbers show that our strategy is successful:",
+
+  "about-num1": "480 million €",
+  "about-num1-text": "Revenue",
+  "about-num2": "1.900",
+  "about-num2-text": "Employees",
+  "about-num3": "30 million €",
+  "about-num3-text": "Investments ",
+  "about-current-year": "2020",
+
+  "companies-p1": "Our companies operate in a diverse set of industries. For example, we produce construction materials, print labels for the packaging industry and offer crane services. Find out more about some of our businesses below:",
+
+  "contact-phone": "+49 5401 / 840200",
+  "contact-email": "info@brinkhege.de",
+  "contact-address": "Oeseder Straße 8\n 49124 Georgsmarienhütte",
+
+  "footer-a1": "Imprint",
+  "footer-a2": "Privacy Policy",
+  "footer-copyright": "© 2021 HBB GmbH & Co. KG",
+
+  "cookie-text": "We use cookies to optimise our website. Click on “I agree” to accept cookies.",
+  "cookie-button": "I agree",
+
+  "404-section-heading": "Not found",
+  "404-title": "404 Page was not found",
+  "404-p1": "Unfortunately no page with this address exists.",
+  "404-button": "Back to Homepage"
+}
