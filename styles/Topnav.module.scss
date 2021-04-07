@@ -1,0 +1,16 @@
+@import "./variables";
+.topnav {
+  font-size: 12px;
+  height: 51px;
+  padding: 0 36px;
+  background-color: $accentcolor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  div {
+    display: flex;
+    p {
+      margin-left: 18px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "./variables";
+
+.navbar {
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  height: 88px;
+  padding: 0 36px;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    display: flex;
+    list-style: none;
+    .navlink {
+      padding: 0 14px;
+    }
+  }
+}

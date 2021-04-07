@@ -1,0 +1,23 @@
+@import "./_variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+html,
+body {
+  font-family: "Titillium Web", Verdana, sans-serif;
+  color: $textcolor;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 114px;
+  padding: 36px;
+}

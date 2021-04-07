@@ -1,0 +1,12 @@
+@import "./variables";
+/* 
+Breakpoints
+tablet: 959px) 
+mobile 569px 
+*/
+
+//---- Layout
+.wrapper {
+  padding-top: 50px;
+  background-color: $backgroundcolor;
+}
