@@ -1,11 +1,20 @@
 {
-  "company-navlink": "Company",
+  "head-home-title": "kvn - Home",
+  "about-navlink": "About",
   "services-navlink": "Services",
   "sales-navlink": "Sales",
   "contact-navlink": "Contact",
 
+  "info-address": "Benzstraße 13, 49076 Osnabrück, Germany",
+  "info-email": "info@kvn-autokrane.de",
+  "info-phone": "+49 (0)541 505600",
+
   "current-locale": "English",
   "change-locale-to": "Deutsch",
+
+  "home-intro-h1": "Willkommen bei der KVN Autokrane GmbH",
+  "home-intro-p1": "Mobilkrane und Schwertransporte, damit hat die KVN Autokrane GmbH über dreißig Jahre Erfahrung. Wir sind ein regionales Dienstleistungsunternehmen der Schwerlastbranche und führen Windkraft-Projekte überregional in Europa durch.",
+  "home-intro-p2": "Schauen Sie sich gerne auf unseren Seiten um. Wir berichten dort über den Fuhrpark, unsere Mitarbeiter und wissenswerte Fakten über das Unternehmen. Falls Sie von dem Angebot überzeugt sind, kontaktieren Sie uns gerne. Wir antworten Ihnen schnellstmöglich.",
 
   "header-title": "Heiner Brinkhege\n Beteiligungsgesellschaft",
   "header-p1": "We are a family-run company that owns a number of successful medium-sized businesses. Our headquarters are located in Georgsmarienhütte, Germany.",

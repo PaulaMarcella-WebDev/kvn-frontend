@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "../../styles/Topnav.module.scss";
+import { useTranslation } from "next-i18next";
 
 const Topnav = () => {
+  const { t } = useTranslation("common");
   return (
     <div className={styles.topnav}>
-      <p>Benzstraße 13, 49076 Osnabrück, Germany</p>
+      <p>{t("info-address")}</p>
       <div>
-        <p>info@kvn.de</p>
-        <p>+49 (0)54188 8888888</p>
+        <p>{t("info-email")}</p>
+        <p>{t("info-phone")}</p>
       </div>
     </div>
   );

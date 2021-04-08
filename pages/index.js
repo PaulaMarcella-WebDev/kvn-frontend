@@ -10,19 +10,18 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>{t("head-home-title")}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
         <Header />
-        <div className="container">
-          <h1>Welcome to kvn</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos rerum
-            totam, explicabo reiciendis voluptate exercitationem molestiae
-            debitis sit ad officia?
-          </p>
-        </div>
+        <section id="intro">
+          <div className="container">
+            <h1>{t("home-intro-h1")}</h1>
+            <p>{t("home-intro-p1")}</p>
+            <p>{t("home-intro-p2")}</p>
+          </div>
+        </section>
       </Layout>
     </>
   );
