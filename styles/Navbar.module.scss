@@ -1,6 +1,7 @@
 @import "./variables";
 
 .navbar {
+  z-index: 200;
   font-size: 20px;
   letter-spacing: 0.06em;
   height: 88px;
@@ -8,15 +9,42 @@
   background-color: $white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  ul {
+  .nav {
     display: flex;
-    list-style: none;
-    .navlink {
+    height: 100%;
+    .dropdown {
+      display: flex;
+      align-items: center;
       padding: 0 14px;
+      position: relative;
+      height: 100%;
       svg {
         margin-left: 5px;
       }
+      .navlinks {
+        z-index: 200;
+        position: absolute;
+        right: auto;
+        top: 100%;
+        background-color: #fff;
+        border-radius: 0 0 6px 6px;
+        padding: 18px;
+        min-width: 13em;
+        max-width: 20em;
+        list-style: none;
+        .navlink {
+          padding: 14px 27px;
+        }
+      }
+    }
+  }
+}
+
+//Tablet & Mobile
+@media only screen and (max-width: 959px) {
+  .navbar {
+    .nav {
+      flex-direction: column;
     }
   }
 }

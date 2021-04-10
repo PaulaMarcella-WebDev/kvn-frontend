@@ -1,15 +1,20 @@
 import styles from "../../styles/Navbar.module.scss";
 import iconSet from "../../icons/selection.json";
 import IcomoonReact, { iconList } from "icomoon-react";
+import NavLinks from "../../data/nav-links";
+
 import Link from "next/link";
 import Image from "next/image";
 
 import { useTranslation } from "next-i18next";
 
+import { useState } from "react";
+
 const Navbar = () => {
+  const [isShown, setIsShown] = useState({ nav1: false });
   const { t } = useTranslation("common");
   return (
-    <div className={styles.navbar}>
+    <nav className={styles.navbar}>
       <Link href="/">
         <a>
           <Image
@@ -20,17 +25,52 @@ const Navbar = () => {
           />
         </a>
       </Link>
-      <ul className="navlinks">
-        <li className={styles.navlink}>
-          <Link href="#">{t("about-navlink")}</Link>{" "}
-          <IcomoonReact
-            iconSet={iconSet}
-            color="#111"
-            size={13}
-            icon="chevron-down"
-          />
-        </li>
-        <li className={styles.navlink}>
+      <div className={styles.nav}>
+        {NavLinks.map((link) => {
+          if (link.type === "dropdown") {
+            return (
+              <div
+                className={styles.dropdown}
+                onMouseEnter={() => setIsShown(true)}
+                onMouseLeave={() => setIsShown(false)}
+              >
+                <span className={styles.dropdowntitle}>
+                  {t(link.title)}
+                  <IcomoonReact
+                    iconSet={iconSet}
+                    color="#111"
+                    size={13}
+                    icon="chevron-down"
+                  />
+                </span>
+                {isShown && (
+                  <ul className={styles.navlinks}>
+                    {link.sublinks &&
+                      link.sublinks.map((sublink) => (
+                        <li className={styles.navlink}>
+                          <Link href="#">{t(sublink.title)}</Link>
+                        </li>
+                      ))}
+                  </ul>
+                )}
+              </div>
+            );
+          } else {
+            return (
+              <div className={styles.dropdown}>
+                <Link href="#">{t(link.title)}</Link>
+              </div>
+            );
+          }
+        })}
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
+
+/* <div className={styles.dropdown}>
           <Link href="#">{t("services-navlink")}</Link>
           <IcomoonReact
             iconSet={iconSet}
@@ -38,8 +78,8 @@ const Navbar = () => {
             size={13}
             icon="chevron-down"
           />
-        </li>
-        <li className={styles.navlink}>
+        </div>
+        <div className={styles.dropdown}>
           <Link href="#">{t("sales-navlink")}</Link>
           <IcomoonReact
             iconSet={iconSet}
@@ -47,8 +87,8 @@ const Navbar = () => {
             size={13}
             icon="chevron-down"
           />
-        </li>
-        <li className={styles.navlink}>
+        </div>
+        <div className={styles.dropdown}>
           <Link href="#">{t("contact-navlink")}</Link>
           <IcomoonReact
             iconSet={iconSet}
@@ -56,10 +96,4 @@ const Navbar = () => {
             size={13}
             icon="chevron-down"
           />
-        </li>
-      </ul>
-    </div>
-  );
-};
-
-export default Navbar;
+        </div> */
