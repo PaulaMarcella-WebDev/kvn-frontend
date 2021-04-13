@@ -1,0 +1,52 @@
+@import "./variables";
+
+//Tablet & Mobile
+.navbar {
+  width: 100%;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  background-color: $white;
+  z-index: 200;
+  overflow: hidden;
+  .navcontainer {
+    height: 88px;
+    padding: 27px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      height: 35px;
+    }
+  }
+}
+
+.nav {
+  height: 90vh;
+  background-color: #fff;
+  width: 100%;
+  padding-top: 27px;
+  list-style: none;
+  position: absolute;
+}
+
+.dropdown {
+  padding: 9px 36px;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.navlinks {
+  border-top: 2px solid $brandcolor;
+  background-color: #fff;
+  list-style: none;
+  .navlink {
+    padding: 9px 36px;
+  }
+}
+
+@media only screen and (min-width: 1223px) {
+  .navbar {
+    display: none;
+  }
+}

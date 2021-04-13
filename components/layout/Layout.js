@@ -1,14 +1,15 @@
 import styles from "../../styles/Layout.module.scss";
+
 import Topnav from "./Topnav";
-import MobileNav from "./MobileNav";
-// import Navbar from "./Navbar";
+import MobileNavbar from "./navigation/MobileNavbar";
+import DesktopNavbar from "./navigation/DesktopNavbar";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Topnav />
-      {/* <Navbar /> */}
-      <MobileNav />
+      <DesktopNavbar />
+      <MobileNavbar />
       <div className={styles.wrapper}>{children}</div>
     </>
   );

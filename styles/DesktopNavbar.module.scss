@@ -1,0 +1,65 @@
+@import "./variables";
+
+// Desktop
+.navbar {
+  z-index: 200;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  height: 88px;
+  padding: 0 36px;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    height: 34px;
+  }
+}
+
+.nav {
+  display: flex;
+  height: 100%;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  position: relative;
+  height: 100%;
+  span:hover {
+    cursor: default;
+  }
+  svg {
+    margin-left: 5px;
+  }
+  .navlinks {
+    display: none;
+    z-index: 200;
+    position: absolute;
+    right: auto;
+    top: 100%;
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+    padding: 18px;
+    min-width: 13em;
+    max-width: 20em;
+    list-style: none;
+    .navlink {
+      padding: 14px 27px;
+    }
+  }
+}
+
+.dropdown:hover,
+.dropdown:active {
+  .navlinks {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .navbar {
+    display: none;
+  }
+}

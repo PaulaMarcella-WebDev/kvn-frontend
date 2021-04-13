@@ -17,8 +17,22 @@ a {
   box-sizing: border-box;
 }
 
+/* 
+Breakpoints
+iPadPro: 1224px
+tablet: 959px
+mobile 569px 
+*/
+
 .container {
-  margin: 0 120px;
-  padding: 100px;
+  padding: 36px;
   overflow: hidden;
+}
+
+// Desktop
+@media only screen and (min-width: 959px) {
+  .container {
+    margin: 0 120px;
+    padding: 100px;
+  }
 }
