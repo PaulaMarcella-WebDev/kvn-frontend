@@ -1,15 +1,17 @@
 import styles from "../../styles/Navbar.module.scss";
 import iconSet from "../../icons/selection.json";
 import IcomoonReact, { iconList } from "icomoon-react";
+import { Squash as Hamburger } from "hamburger-react";
 import NavLinks from "../../data/nav-links";
 
+import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 import { useTranslation } from "next-i18next";
 
-const Navbar = () => {
+const MobileNav = () => {
   const { t } = useTranslation("common");
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className={styles.navbar}>
       <div className={styles.navcontainer}>
@@ -22,19 +24,11 @@ const Navbar = () => {
             />
           </a>
         </Link>
-        <Link href="/">
-          <a className={styles.menubutton}>
-            {" "}
-            <IcomoonReact
-              iconSet={iconSet}
-              color="#111"
-              size={30}
-              icon="menu"
-            />
-          </a>
-        </Link>
+        <div className={styles.hamburger}>
+          <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} rounded />
+        </div>
       </div>
-      <div className={styles.nav}>
+      <div className={`${styles.nav} ${isOpen ? styles.isOpen : " "}`}>
         {NavLinks.map((link, index) => {
           if (link.type === "dropdown") {
             return (
@@ -71,4 +65,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default MobileNav;

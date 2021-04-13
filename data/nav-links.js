@@ -1,5 +1,3 @@
-import { useTranslation } from "next-i18next";
-
 const NavLinks = [
   {
     title: "about-navlink",

@@ -1,50 +1,116 @@
 @import "./variables";
 
-.navbar {
-  z-index: 200;
-  font-size: 20px;
-  letter-spacing: 0.06em;
-  height: 88px;
-  padding: 0 36px;
-  background-color: $white;
-  display: flex;
-  justify-content: space-between;
-  .nav {
-    display: flex;
-    height: 100%;
-    .dropdown {
+@media only screen and (max-width: 959px) {
+  //Tablet & Mobile
+  .navbar {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    background-color: $white;
+    .navcontainer {
+      height: 88px;
+      padding: 27px 36px;
       display: flex;
-      align-items: center;
-      padding: 0 14px;
-      position: relative;
-      height: 100%;
-      svg {
-        margin-left: 5px;
+      justify-content: space-between;
+      .logo {
+        height: 35px;
+      }
+    }
+    .nav {
+      visibility: hidden;
+      height: 0;
+      opacity: 0;
+      background-color: #fff;
+      width: 100%;
+      padding-top: 27px;
+      list-style: none;
+      position: absolute;
+      z-index: 200;
+
+      .dropdown {
+        padding: 9px 36px;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
       }
       .navlinks {
-        z-index: 200;
-        position: absolute;
-        right: auto;
-        top: 100%;
+        display: none;
         background-color: #fff;
-        border-radius: 0 0 6px 6px;
-        padding: 18px;
-        min-width: 13em;
-        max-width: 20em;
         list-style: none;
         .navlink {
-          padding: 14px 27px;
+          padding: 9px 36px;
         }
       }
     }
   }
 }
 
-//Tablet & Mobile
-@media only screen and (max-width: 959px) {
+.isOpen {
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: unset !important;
+  transition: height 0.4s ease-in-out;
+}
+
+// Desktop
+@media only screen and (min-width: 960px) {
   .navbar {
+    z-index: 200;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    height: 88px;
+    padding: 0 36px;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      height: 34px;
+    }
+    .hamburger {
+      display: none !important;
+    }
     .nav {
-      flex-direction: column;
+      display: flex;
+      height: 100%;
+      .dropdown {
+        display: flex;
+        align-items: center;
+        padding: 0 14px;
+        position: relative;
+        height: 100%;
+        span:hover {
+          cursor: default;
+        }
+        svg {
+          margin-left: 5px;
+        }
+        .navlinks {
+          display: none;
+          z-index: 200;
+          position: absolute;
+          right: auto;
+          top: 100%;
+          background-color: #fff;
+          border-radius: 0 0 6px 6px;
+          padding: 18px;
+          min-width: 13em;
+          max-width: 20em;
+          list-style: none;
+          .navlink {
+            padding: 14px 27px;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar .nav .dropdown:hover,
+  .navbar .nav .dropdown:active {
+    .navlinks {
+      display: block;
     }
   }
 }
