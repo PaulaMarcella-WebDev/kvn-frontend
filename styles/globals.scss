@@ -52,10 +52,13 @@ mobile 569px
   overflow: hidden;
 }
 
+.dark-bg {
+  background: $accentcolor;
+}
+
 // Desktop
 @media only screen and (min-width: 959px) {
   .container {
-    margin: 0 120px;
-    padding: 100px;
+    padding: 220px;
   }
 }
