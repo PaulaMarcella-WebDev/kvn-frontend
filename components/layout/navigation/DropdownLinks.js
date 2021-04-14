@@ -8,7 +8,9 @@ const DropdownLinks = ({ sublinks, styles }) => {
       {sublinks &&
         sublinks.map((sublink, index) => (
           <li className={styles.navlink} key={index}>
-            <Link href="#">{t(sublink.title)}</Link>
+            <Link href={`/${t(sublink.title).toLowerCase()}`}>
+              {t(sublink.title)}
+            </Link>
           </li>
         ))}
     </ul>

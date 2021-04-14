@@ -1,6 +1,6 @@
 import styles from "../../styles/Layout.module.scss";
 
-import Topnav from "./Topnav";
+import Topnav from "./navigation/Topnav";
 import MobileNavbar from "./navigation/MobileNavbar";
 import DesktopNavbar from "./navigation/DesktopNavbar";
 

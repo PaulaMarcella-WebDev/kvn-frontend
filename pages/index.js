@@ -5,7 +5,7 @@ import Layout from "../components/layout/Layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 
-export default function Home() {
+const Home = () => {
   const { t } = useTranslation("common");
   return (
     <>
@@ -20,12 +20,16 @@ export default function Home() {
             <h1>{t("home-intro-h1")}</h1>
             <p>{t("home-intro-p1")}</p>
             <p>{t("home-intro-p2")}</p>
+            <button className="btn">Button Beispiel</button>
+            <button className="btn outline">Button Outline</button>
           </div>
         </section>
       </Layout>
     </>
   );
-}
+};
+
+export default Home;
 
 export const getStaticProps = async ({ locale }) => ({
   props: {

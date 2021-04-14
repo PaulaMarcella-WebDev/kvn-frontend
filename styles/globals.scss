@@ -24,6 +24,28 @@ tablet: 959px
 mobile 569px 
 */
 
+.btn {
+  padding: 13px 31px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: 6px;
+  background-color: $brandcolor;
+  border: 1px solid $brandcolor;
+  font-size: 12px;
+  text-align: center;
+  margin-right: 1rem;
+  &:hover {
+    background-color: $white;
+  }
+  &.outline {
+    background-color: $white;
+    &:hover {
+      background-color: $brandcolor-dark;
+      color: $white;
+    }
+  }
+}
+
 .container {
   padding: 36px;
   overflow: hidden;

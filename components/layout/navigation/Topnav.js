@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "../../styles/Topnav.module.scss";
+import styles from "../../../styles/Topnav.module.scss";
 import { useTranslation } from "next-i18next";
 
 const Topnav = () => {

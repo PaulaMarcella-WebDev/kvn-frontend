@@ -3,18 +3,20 @@ const NavLinks = [
     title: "about-navlink",
     type: "dropdown",
     sublinks: [
-      { title: "about-sublink" },
-      { title: "sales-sublink" },
-      { title: "about-sublink" }
+      { title: "about-navlink" },
+      { title: "about-navlink" },
+      { title: "about-navlink" },
+      { title: "about-navlink" }
     ]
   },
+
   {
-    title: "service-navlink",
+    title: "services-navlink",
     type: "dropdown",
     sublinks: [
-      { title: "about-sublink" },
-      { title: "sales-sublink" },
-      { title: "about-sublink" }
+      { title: "services-navlink" },
+      { title: "services-navlink" },
+      { title: "services-navlink" }
     ]
   },
   {

@@ -31,7 +31,9 @@ const DesktopNav = () => {
         } else {
           return (
             <div className={styles.dropdown} key={index}>
-              <Link href="#">{t(link.title)}</Link>
+              <Link href={`/${t(link.title).toLowerCase()}`}>
+                {t(link.title)}
+              </Link>
             </div>
           );
         }
