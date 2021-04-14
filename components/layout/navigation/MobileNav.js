@@ -85,9 +85,7 @@ const MobileNav = ({ isOpen }) => {
                   key={index}
                   variants={childVariants}
                 >
-                  <Link href={`/${t(link.title).toLowerCase()}`}>
-                    {t(link.title)}
-                  </Link>
+                  <Link href={`/${t(link.href)}`}>{t(link.title)}</Link>
                 </motion.div>
               );
             }

@@ -4,6 +4,10 @@
   "services-navlink": "Leistungen",
   "sales-navlink": "Verkauf",
   "contact-navlink": "Kontakt",
+  "about-href": "unternehmen",
+  "services-href": "leistungen",
+  "sales-href": "verkauf",
+  "contact-href": "kontakt",
 
   "current-locale": "Deutsch",
   "change-locale-to": "English",
@@ -35,9 +39,11 @@
   "contact-email": "info@brinkhege.de",
   "contact-address": "Oeseder Straße 8\n 49124 Georgsmarienhütte",
 
-  "footer-a1": "Impressum",
-  "footer-a2": "Datenschutz",
-  "footer-copyright": "© 2021 HBB GmbH & Co. KG",
+  "footer-company-title": "kvn Autokrane GmbH",
+  "footer-imprint": "Impressum",
+  "footer-privacy": "Datenschutz",
+  "footer-cookies": "Cookies",
+  "footer-terms": "AGB",
 
   "cookie-text": "Wir verwenden Cookies, um unsere Webseite zu optimieren. Klicken Sie auf  „Ich stimme zu“, um Cookies zu akzeptieren.",
   "cookie-button": "Ich stimme zu",

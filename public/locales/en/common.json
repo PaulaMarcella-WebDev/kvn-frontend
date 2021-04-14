@@ -5,6 +5,11 @@
   "sales-navlink": "Sales",
   "contact-navlink": "Contact",
 
+  "about-href": "unternehmen",
+  "services-href": "leistungen",
+  "sales-href": "verkauf",
+  "contact-href": "kontakt",
+
   "info-address": "Benzstraße 13, 49076 Osnabrück, Germany",
   "info-email": "info@kvn-autokrane.de",
   "info-phone": "+49 (0)541 505600",
@@ -35,9 +40,11 @@
   "contact-email": "info@brinkhege.de",
   "contact-address": "Oeseder Straße 8\n 49124 Georgsmarienhütte",
 
-  "footer-a1": "Imprint",
-  "footer-a2": "Privacy Policy",
-  "footer-copyright": "© 2021 HBB GmbH & Co. KG",
+  "footer-company-title": "kvn Autokrane GmbH",
+  "footer-imprint": "Imprint",
+  "footer-privacy": "  Privacy Policy ",
+  "footer-cookies": "Cookies",
+  "footer-terms": "Terms and Conditions",
 
   "cookie-text": "We use cookies to optimise our website. Click on “I agree” to accept cookies.",
   "cookie-button": "I agree",

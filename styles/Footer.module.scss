@@ -1,0 +1,32 @@
+@import "./variables";
+
+.footer {
+  padding: 27px 36px;
+  background-color: $accentcolor;
+  width: 100%;
+}
+
+.copyright {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  p {
+    padding: 0 10px;
+    &.link {
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Tablet & Mobile
+@media only screen and (max-width: 1224px) {
+  .copyright {
+    flex-direction: column;
+    text-align: center;
+    p {
+      padding: 5px;
+    }
+  }
+}

@@ -3,10 +3,10 @@ const NavLinks = [
     title: "about-navlink",
     type: "dropdown",
     sublinks: [
-      { title: "about-navlink" },
-      { title: "about-navlink" },
-      { title: "about-navlink" },
-      { title: "about-navlink" }
+      { title: "about-navlink", href: "about-href" },
+      { title: "about-navlink", href: "about-href" },
+      { title: "about-navlink", href: "about-href" },
+      { title: "about-navlink", href: "about-href" }
     ]
   },
 
@@ -14,18 +14,20 @@ const NavLinks = [
     title: "services-navlink",
     type: "dropdown",
     sublinks: [
-      { title: "services-navlink" },
-      { title: "services-navlink" },
-      { title: "services-navlink" }
+      { title: "services-navlink", href: "services-href" },
+      { title: "services-navlink", href: "services-href" },
+      { title: "services-navlink", href: "services-href" }
     ]
   },
   {
     title: "sales-navlink",
-    type: "link"
+    type: "link",
+    href: "sales-href"
   },
   {
     title: "contact-navlink",
-    type: "link"
+    type: "link",
+    href: "contact-href"
   }
 ];
 
