@@ -24,8 +24,23 @@ tablet: 959px
 mobile 569px 
 */
 
+.section-heading {
+  margin-bottom: 4rem;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+
+  span {
+    padding-bottom: 5px;
+    border-bottom: 2px solid $brandcolor;
+  }
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
 .btn {
-  margin-top: 1rem; // temporary?
+  margin-bottom: 2rem;
   padding: 13px 31px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -48,7 +63,7 @@ mobile 569px
 }
 
 .container {
-  padding: 36px;
+  padding: 80px 36px;
   overflow: hidden;
 }
 
@@ -59,6 +74,6 @@ mobile 569px
 // Desktop
 @media only screen and (min-width: 959px) {
   .container {
-    padding: 220px;
+    padding: 100px 220px;
   }
 }

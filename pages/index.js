@@ -23,7 +23,10 @@ const Home = () => {
             <p>{t("home-intro-p2")}</p>
           </div>
           <div className="container dark-bg">
-            <h1>Beispiele</h1>
+            <h1 className="section-heading">
+              <span>Abschnitt Überschrift</span>
+            </h1>
+            <h2 className="title">Beispiele</h2>
             <button className="btn">Button Beispiel</button>
             <button className="btn outline">Button Outline</button>
             <Card />
