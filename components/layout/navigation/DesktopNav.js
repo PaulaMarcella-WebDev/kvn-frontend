@@ -1,5 +1,5 @@
-import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "../../../styles/DesktopNavbar.module.scss";
 import NavLinks from "../../../data/nav-links";
 import iconSet from "../../../icons/selection.json";
@@ -10,6 +10,8 @@ import { useTranslation } from "next-i18next";
 
 const DesktopNav = () => {
   const { t } = useTranslation("common");
+  const router = useRouter();
+  console.log(router);
   return (
     <div className={styles.nav}>
       {NavLinks.map((link, index) => {
