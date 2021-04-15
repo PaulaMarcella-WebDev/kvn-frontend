@@ -1,24 +1,26 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import styles from "../../../styles/DesktopNavbar.module.scss";
 import NavLinks from "../../../data/nav-links";
 import iconSet from "../../../icons/selection.json";
+
 import DropdownLinks from "./DropdownLinks";
 
 import IcomoonReact, { iconList } from "icomoon-react"; // remove iconlist for production
 import { useTranslation } from "next-i18next";
-
 const DesktopNav = () => {
   const { t } = useTranslation("common");
   const router = useRouter();
-  console.log(router);
+  const activeLink = (href) => {
+    return router.asPath === "/" + href ? styles.active : "";
+  };
   return (
     <div className={styles.nav}>
-      {NavLinks.map((link, index) => {
+      {NavLinks.map((link) => {
         if (link.type === "dropdown") {
           return (
-            <div key={index} className={styles.dropdown}>
-              <span className={styles.dropdowntitle}>
+            <div key={link.title} className={styles.dropdown}>
+              <span className={activeLink(t(link.sublinks[0].href))}>
                 {t(link.title)}
                 <IcomoonReact
                   iconSet={iconSet}
@@ -32,7 +34,10 @@ const DesktopNav = () => {
           );
         } else {
           return (
-            <div className={styles.dropdown} key={index}>
+            <div
+              className={`${styles.dropdown} ${activeLink(t(link.href))}`}
+              key={link.title}
+            >
               <Link href={`/${t(link.href)}`}>{t(link.title)}</Link>
             </div>
           );

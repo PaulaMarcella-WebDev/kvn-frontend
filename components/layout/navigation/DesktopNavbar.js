@@ -4,7 +4,6 @@ import styles from "../../../styles/DesktopNavbar.module.scss";
 import DesktopNav from "./DesktopNav.js";
 
 import { useTranslation } from "next-i18next";
-
 const DesktopNavbar = () => {
   const { t } = useTranslation("common");
   return (

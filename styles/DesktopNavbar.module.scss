@@ -35,6 +35,9 @@
     display: flex;
     align-items: center;
     height: 100%;
+    &:hover {
+      color: $linktextcolor;
+    }
   }
   span:hover {
     cursor: default;
@@ -61,11 +64,15 @@
 }
 
 .dropdown:hover,
-.dropdown:active {
+.dropdown:focus {
   border-bottom: 4px solid $brandcolor;
   .navlinks {
     display: block;
   }
+}
+
+.active {
+  color: $linktextcolor;
 }
 
 @media only screen and (max-width: 1224px) {

@@ -3,7 +3,7 @@
 //Tablet & Mobile
 .navbar {
   width: 100%;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.06em;
   background-color: $white;
   overflow: hidden;
@@ -35,6 +35,14 @@
     justify-content: space-between;
   }
 }
+
+.active {
+  color: $linktextcolor;
+  &::after {
+    content: "";
+  }
+}
+
 .navlinks {
   border-top: 2px solid $brandcolor;
   background-color: #fff;

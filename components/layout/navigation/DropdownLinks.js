@@ -6,8 +6,8 @@ const DropdownLinks = ({ sublinks, styles }) => {
   return (
     <ul className={styles.navlinks}>
       {sublinks &&
-        sublinks.map((sublink, index) => (
-          <li className={styles.navlink} key={index}>
+        sublinks.map((sublink) => (
+          <li className={styles.navlink} key={sublink.title}>
             <Link href={`/${t(sublink.href)}`}>{t(sublink.title)}</Link>
           </li>
         ))}

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
+
 import Link from "next/link";
 import styles from "../../../styles/MobileNavbar.module.scss";
 import NavLinks from "../../../data/nav-links";
@@ -11,6 +13,15 @@ import { useTranslation } from "next-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 
 const MobileNav = ({ isOpen }) => {
+  const router = useRouter();
+  const { t } = useTranslation("common");
+  const activeLink = (href) => {
+    return router.asPath === "/" + href ? styles.active : "";
+  };
+  const [dropdownOpen, setDropdownOpen] = useState({});
+  const toggleDropdown = (title) => {
+    setDropdownOpen({ [title]: !dropdownOpen[title] });
+  };
   const variants = {
     hidden: {
       height: 0,
@@ -34,26 +45,18 @@ const MobileNav = ({ isOpen }) => {
       opacity: 1
     }
   };
-
-  const { t } = useTranslation("common");
-  const [dropdownOpen, setDropdownOpen] = useState({});
-  const toggleDropdown = (title) => {
-    console.log(title);
-    setDropdownOpen({ [title]: !dropdownOpen[title] });
-    console.log(dropdownOpen);
-  };
   return (
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          key="nav"
+          key="mobilenav"
           className={`${styles.nav} ${isOpen ? styles.isOpen : " "}`}
           initial="hidden"
           animate="visible"
           exit="hidden"
           variants={variants}
         >
-          {NavLinks.map((link, index) => {
+          {NavLinks.map((link) => {
             if (link.type === "dropdown") {
               return (
                 <motion.div
@@ -62,7 +65,7 @@ const MobileNav = ({ isOpen }) => {
                   variants={childVariants}
                 >
                   <span
-                    className={styles.dropdowntitle}
+                    className={activeLink(t(link.sublinks[0].href))}
                     onClick={() => toggleDropdown(link.title)}
                   >
                     {t(link.title)}
@@ -81,8 +84,8 @@ const MobileNav = ({ isOpen }) => {
             } else {
               return (
                 <motion.div
-                  className={styles.dropdown}
-                  key={index}
+                  className={`${styles.dropdown} ${activeLink(t(link.href))}`}
+                  key={link.title}
                   variants={childVariants}
                 >
                   <Link href={`/${t(link.href)}`}>{t(link.title)}</Link>
