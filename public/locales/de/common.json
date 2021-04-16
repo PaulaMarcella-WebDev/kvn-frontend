@@ -1,13 +1,39 @@
 {
   "head-home-title": "kvn - Autokrane",
-  "about-navlink": "Unternehmen",
-  "services-navlink": "Leistungen",
-  "sales-navlink": "Verkauf",
-  "contact-navlink": "Kontakt",
-  "about-href": "unternehmen",
-  "services-href": "leistungen",
-  "sales-href": "verkauf",
-  "contact-href": "kontakt",
+
+  "navlink-about": "Unternehmen",
+  "href-about": "unternehmen",
+
+  "sublink-numbers": "Zahlen & Fakten",
+  "href-numbers": "zahlen-fakten",
+  "sublink-contactperson": "Ansprechpartner",
+  "href-contactperson": "kontaktpersonen",
+  "sublink-careers": "Karriere",
+  "href-careers": "karriere",
+  "sublink-history": "Geschichte",
+  "href-history": "geschichte",
+  "sublink-safety": "Sicherheit",
+  "href-safety": "sicherheit",
+
+  "navlink-services": "Leistungen",
+  "href-services": "leistungen",
+
+  "sublink-fleet": "Fuhrpark",
+  "href-fleet": "fuhrpark",
+  "sublink-wind": "Windkraft",
+  "href-wind": "windkraft",
+  "sublink-mobilecranes": "Mobile ­Raupenkrane",
+  "href-mobilecranes": "mobile­-raupenkrane",
+  "sublink-heavyloads": "Schwertransporte",
+  "href-heavyloads": "schwertransporte",
+  "sublink-platforms-forklifts": "Arbeitsbühnen & Teleskopstapler",
+  "href-platforms-forklifts": "arbeitsbühnen-teleskopstapler",
+
+  "navlink-sales": "Verkauf",
+  "href-sales": "verkauf",
+
+  "navlink-contact": "Kontakt",
+  "href-contact": "kontakt",
 
   "current-locale": "Deutsch",
   "change-locale-to": "English",

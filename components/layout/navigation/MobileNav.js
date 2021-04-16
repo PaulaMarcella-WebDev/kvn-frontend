@@ -2,10 +2,11 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 
 import Link from "next/link";
-import styles from "../../../styles/MobileNavbar.module.scss";
-import NavLinks from "../../../data/nav-links";
-import iconSet from "../../../icons/selection.json";
+import styles from "@/styles/MobileNavbar.module.scss";
+import NavLinks from "@/data/nav-links";
+import iconSet from "@/icons/selection.json";
 import DropdownLinks from "./DropdownLinks";
+import { convertToHref, activeLink } from "@/helpers";
 
 import IcomoonReact, { iconList } from "icomoon-react"; // remove iconlist for production
 import { useTranslation } from "next-i18next";
@@ -15,12 +16,9 @@ import { motion, AnimatePresence } from "framer-motion";
 const MobileNav = ({ isOpen }) => {
   const router = useRouter();
   const { t } = useTranslation("common");
-  const activeLink = (href) => {
-    return router.asPath === "/" + href ? styles.active : "";
-  };
   const [dropdownOpen, setDropdownOpen] = useState({});
-  const toggleDropdown = (title) => {
-    setDropdownOpen({ [title]: !dropdownOpen[title] });
+  const toggleDropdown = (href) => {
+    setDropdownOpen({ [href]: !dropdownOpen[href] });
   };
   const variants = {
     hidden: {
@@ -57,18 +55,20 @@ const MobileNav = ({ isOpen }) => {
           variants={variants}
         >
           {NavLinks.map((link) => {
-            if (link.type === "dropdown") {
+            const { type, title, sublinks } = link;
+            const href = convertToHref(t(link.href));
+            if (type === "dropdown") {
               return (
                 <motion.div
-                  key={link.title}
+                  key={href}
                   className={styles.dropdown}
                   variants={childVariants}
                 >
                   <span
-                    className={activeLink(t(link.sublinks[0].href))}
-                    onClick={() => toggleDropdown(link.title)}
+                    className={styles[activeLink(router.asPath, href)]}
+                    onClick={() => toggleDropdown(href)}
                   >
-                    {t(link.title)}
+                    {t(title)}
                     <IcomoonReact
                       iconSet={iconSet}
                       color="#111"
@@ -76,19 +76,25 @@ const MobileNav = ({ isOpen }) => {
                       icon="chevron-down"
                     />
                   </span>
-                  {dropdownOpen[link.title] && (
-                    <DropdownLinks sublinks={link.sublinks} styles={styles} />
+                  {dropdownOpen[href] && (
+                    <DropdownLinks
+                      sublinks={sublinks}
+                      href={href}
+                      styles={styles}
+                    />
                   )}
                 </motion.div>
               );
             } else {
               return (
                 <motion.div
-                  className={`${styles.dropdown} ${activeLink(t(link.href))}`}
-                  key={link.title}
+                  className={`${styles.dropdown} ${
+                    styles[activeLink(router.asPath, href)]
+                  }`}
+                  key={href}
                   variants={childVariants}
                 >
-                  <Link href={`/${t(link.href)}`}>{t(link.title)}</Link>
+                  <Link href={`/${href}`}>{t(title)}</Link>
                 </motion.div>
               );
             }

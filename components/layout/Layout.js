@@ -1,4 +1,4 @@
-import styles from "../../styles/Layout.module.scss";
+import styles from "@/styles/Layout.module.scss";
 
 import Topnav from "./navigation/Topnav";
 import MobileNavbar from "./navigation/MobileNavbar";

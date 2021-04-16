@@ -1,33 +1,37 @@
 const NavLinks = [
   {
-    title: "about-navlink",
+    title: "navlink-about",
     type: "dropdown",
+    href: "href-about",
     sublinks: [
-      { title: "about-navlink", href: "about-href" },
-      { title: "about-navlink", href: "about-href" },
-      { title: "about-navlink", href: "about-href" },
-      { title: "about-navlink", href: "about-href" }
-    ]
-  },
-
-  {
-    title: "services-navlink",
-    type: "dropdown",
-    sublinks: [
-      { title: "services-navlink", href: "services-href" },
-      { title: "services-navlink", href: "services-href" },
-      { title: "services-navlink", href: "services-href" }
+      { title: "sublink-numbers", hash: "href-numbers" },
+      { title: "sublink-contactperson", hash: "href-contactperson" },
+      { title: "sublink-history", hash: "href-history" },
+      { title: "sublink-safety", hash: "href-safety" },
+      { title: "sublink-careers", href: "href-careers" }
     ]
   },
   {
-    title: "sales-navlink",
-    type: "link",
-    href: "sales-href"
+    title: "navlink-services",
+    type: "dropdown",
+    href: "href-services",
+    sublinks: [
+      { title: "sublink-fleet", href: "href-fleet" },
+      { title: "sublink-wind", href: "href-wind" },
+      { title: "sublink-mobilecranes", hash: "href-mobilecranes" },
+      { title: "sublink-heavyloads", hash: "href-heavyloads" },
+      { title: "sublink-platforms-forklifts", hash: "href-platforms-forklifts" }
+    ]
   },
   {
-    title: "contact-navlink",
-    type: "link",
-    href: "contact-href"
+    title: "navlink-sales",
+    href: "href-sales",
+    type: "link"
+  },
+  {
+    title: "navlink-contact",
+    href: "href-contact",
+    type: "link"
   }
 ];
 

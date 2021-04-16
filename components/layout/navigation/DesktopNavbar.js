@@ -1,6 +1,5 @@
-import { useState } from "react";
 import Link from "next/link";
-import styles from "../../../styles/DesktopNavbar.module.scss";
+import styles from "@/styles/DesktopNavbar.module.scss";
 import DesktopNav from "./DesktopNav.js";
 
 import { useTranslation } from "next-i18next";

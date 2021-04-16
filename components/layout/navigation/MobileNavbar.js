@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import styles from "../../../styles/MobileNavbar.module.scss";
+import styles from "@/styles/MobileNavbar.module.scss";
 
 import MobileNav from "./MobileNav.js";
 

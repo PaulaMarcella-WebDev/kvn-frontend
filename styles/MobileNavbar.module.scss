@@ -38,9 +38,6 @@
 
 .active {
   color: $linktextcolor;
-  &::after {
-    content: "";
-  }
 }
 
 .navlinks {

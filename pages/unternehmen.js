@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout from "../components/layout/Layout";
+import Layout from "@/components/layout/Layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 const About = () => {
