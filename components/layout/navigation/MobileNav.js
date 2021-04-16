@@ -99,6 +99,16 @@ const MobileNav = ({ isOpen }) => {
               );
             }
           })}
+
+          <div className={styles.dropdown}>
+            <p>{t("info-email")}</p>
+          </div>
+          <div className={styles.dropdown}>
+            <p>{t("info-phone")}</p>
+          </div>
+          <div className={styles.dropdown}>
+            <p>LANG SWITCH</p>
+          </div>
         </motion.div>
       )}
     </AnimatePresence>
