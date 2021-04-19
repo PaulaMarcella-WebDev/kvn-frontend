@@ -1,9 +1,11 @@
 @import "./_variables.scss";
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Titillium+Web&display=swap");
 html,
 body {
   font-family: "Titillium Web", Verdana, sans-serif;
   color: $textcolor;
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 a {
@@ -28,7 +30,8 @@ mobile 569px
   margin-bottom: 4rem;
   font-size: 16px;
   letter-spacing: 0.06em;
-
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   span {
     padding-bottom: 5px;
     border-bottom: 2px solid $brandcolor;
@@ -36,6 +39,22 @@ mobile 569px
 }
 
 .title {
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.title-center {
+  text-align: center;
+}
+
+.hr {
+  width: 60%;
+  margin: 4rem auto 6rem auto;
+  border: 1px solid $brandcolor;
+}
+
+.text {
+  line-height: 1.5rem;
   margin-bottom: 2rem;
 }
 

@@ -1,6 +1,45 @@
 {
-  "about-title": "Unternehmen",
-  "about-intro-h1": "Willkommen auf der Unternehmen Seite",
-  "about-intro-p1": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quia in illo autem animi debitis laudantium ad vel consequatur quasi!",
-  "about-intro-p2": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quia in illo autem animi debitis laudantium ad vel consequatur quasi!"
+  "page-title": "Unternehmen",
+  "intro-h1": "Ihr zuverlässiger Parnter für Kranhandel",
+  "intro-p1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquam doloribus, iusto obcaecati explicabo quia exercitationem vel quod expedita blanditiis adipisci cumque natus temporibus sunt quis, repudiandae quasi quos mollitia.",
+  "intro-p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquam doloribus, iusto obcaecati explicabo quia exercitationem vel quod expedita blanditiis adipisci cumque natus temporibus sunt quis, repudiandae quasi quos mollitia.",
+
+  "infobox-hbb-title": "Die Unternehmensgruppe der HBB",
+  "infobox-hbb-text": "Neben kvn ist die HBB Gesellschafterin weiterer erfolgreicher Unternehmen im Beton, Verpackungsdruck- und Dienstleistungsbereich. Zur Gruppe gehören unter anderem fdu, Engelhardt-Druck, Walcher Etiketten, Goelz-Druck, Töpfer Druck, Sauter Druck, die Quarzsand- und Porensteinwerke Neubrandenburg sowie HOFF Kranbetrieb. Mit mehr als 1.900 Beschäftigten erwirtschaftete die HBB-Gruppe 2020 einen Umsatz von 488 Millionen Euro.",
+
+  "numbers-title": "Zahlen & Fakten",
+  "numbers-num1": "xxx Mio. €",
+  "numbers-num1-text": "Umsatz",
+  "numbers-num2": "xxx",
+  "numbers-num2-text": "Beschäftigte",
+  "numbers-num3": "xxx Mio. €",
+  "numbers-num3-text": "Investitionen p.a.",
+  "numbers-year": "Stand 2020",
+
+  "list-title": "Zu unseren Geschäftsfeldern zählen:",
+  "list-li1": "Vermietung von Mobilkranen mit einer Lastkapazität von 40t bis 1200t",
+  "list-li2": "Schwer- und Spezialtransporte",
+  "list-li3": "Vermietung von Arbeitsbühnen und Teleskopstaplern",
+  "list-li4": "Europaweite Errichtung von Windkraftanlagen",
+  "memberships-p1": "Die KVN GmbH ist Mitglied im Bundesverband Windenergie e.V. Außerdem sind wir Gründungsmitglied des Arbeitskreises „Windenergie“ der BSK. (Bundesfachgruppe Schwertransporte und Kranarbeiten e.V.)",
+
+  "history-title": "Geschichte der kvn",
+  "history-intro-text": "Unsere Geschichte beginnt in den Sechzigern und erstreckt sich über mehrere Jahrzehnte. Lesen Sie selbst, warum wir sind, wer wir heute sind.",
+  "history-1961": "1961",
+  "history-1961-text": "Anton Brinkhege KG Kranarbeiten mit Firmensitz an der Schlossstraße in Osnabrück",
+  "history-1986": "1986",
+  "history-1986-text": "Gründung der KVN als Gemeinschaftsunternehmen der Brinkhege-Gruppe und der Firma +egerland+ mit Betriebsgelände in der Gesmolder Straße, Osnabrück",
+  "history-1993": "1993",
+  "history-1993-text": "Ausweitung des Regionalgeschäfts auf den Windkraft-Bereich; Errichtung der ersten größeren Anlage im Emsland / Ostfriesland",
+  "history-2001": "2001",
+  "history-2001-text": "Umzug zum heutigen Firmensitz in der Benzstraße in Osnabrück-Atter; die Heiner Brinkhege Gruppe erwirbt die KVN-Gesellschaftsanteile von +egerland+",
+  "history-2009": "2009",
+  "history-2009-text": "Gründung der rumänischen Tochtergesellschaft KVN Sud-Est Europe SRL in Timisoara",
+
+  "contact-persons-title": "Ansprechpartner",
+
+  "safety-title": "Sicherheit",
+  "safety-p1": "Unser Fuhrpark wird regelmäßig ergänzt; alle Fahrzeuge werden über gesetzliche Anforderungen hinaus technischen Kontrollen unterzogen. In der eigenen Werkstatt und in Fachbetrieben werden diese gewartet und gepflegt.",
+  "safety-p2": "Für unsere Mitarbeiter bieten wir Schulungen und Weiterbildungen an: Unsere operativen Führungskräfte haben die SCC-Prüfung erfolgreich absolviert. Unsere Kranführer durchlaufen die BSK-Kranführer-Schulung in Zusammenarbeit mit der Berufsgenossenschaft und weisen besondere Qualifikation in theoretischen und praktischen Prüfungen nach.",
+  "safety-p3": "Seit vielen Jahren werden wir in Sicherheit und Arbeitsmedizin vom MEDITÜV des TÜV-Nord betreut. Die Einsatzplanung wird insbesondere bei Windkraft-Projekten und bei komplexeren Bauvorhaben (z.B. Brückendemontagen) von CAD-Programmen unterstützt. Das alles, damit Sie sich auf die Sicherheit und Qualität unserer Arbeit verlassen können."
 }

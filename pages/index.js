@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Header from "@/components/layout/Header";
-import Layout from "@/components/layout/Layout";
-import Card from "@/components/layout/Card";
+import Header from "@/layout/Header";
+import Layout from "@/layout/Layout";
+import Card from "@/layout/Card";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";

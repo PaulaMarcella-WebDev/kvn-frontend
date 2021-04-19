@@ -100,15 +100,27 @@ const MobileNav = ({ isOpen }) => {
             }
           })}
 
-          <div className={styles.dropdown}>
+          <motion.div
+            className={styles.dropdown}
+            key={"email"}
+            variants={childVariants}
+          >
             <p>{t("info-email")}</p>
-          </div>
-          <div className={styles.dropdown}>
+          </motion.div>
+          <motion.div
+            className={styles.dropdown}
+            key={"phone"}
+            variants={childVariants}
+          >
             <p>{t("info-phone")}</p>
-          </div>
-          <div className={styles.dropdown}>
+          </motion.div>
+          <motion.div
+            className={styles.dropdown}
+            key={"lang-switch"}
+            variants={childVariants}
+          >
             <p>LANG SWITCH</p>
-          </div>
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>

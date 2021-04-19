@@ -1,0 +1,30 @@
+@import "./_variables.scss";
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  .box {
+    text-align: center;
+    p {
+      font-size: 1.2rem;
+    }
+    span {
+      //Number
+      font-size: 2rem;
+      font-family: "Roboto", sans-serif;
+      color: $brandcolor;
+    }
+  }
+}
+
+.year {
+  margin-top: 4rem;
+  text-align: end;
+}
+@media only screen and (max-width: 659px) {
+  .numbers {
+    flex-direction: column;
+    .box {
+      margin-bottom: 4rem;
+    }
+  }
+}
