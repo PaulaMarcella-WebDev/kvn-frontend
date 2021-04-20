@@ -3,3 +3,16 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px 20px;
 }
+
+// from tablet
+@media only screen and (max-width: 959px) {
+  .teamgrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 10px;
+  }
+}
+@media only screen and (max-width: 559px) {
+  .teamgrid {
+    grid-template-columns: 1fr;
+  }
+}

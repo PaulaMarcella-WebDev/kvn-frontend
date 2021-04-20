@@ -41,7 +41,7 @@ const TeamMembers = [
   },
   {
     name: "Jana Vonhöne",
-    position: "Debitoren-/Lohnbuchhaltung",
+    position: "Debitoren und Lohnbuchhaltung",
     phone: "+49 541 50560 15",
     email: "vonhoene@kvn-autokrane.de",
     fax: "+49 541 50560 25",
