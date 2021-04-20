@@ -4,7 +4,7 @@ const InfoBox = ({ title, text }) => {
   return (
     <div className={styles.infobox}>
       <h3 className="title">{title}</h3>
-      <p className="text">{text}</p>
+      <p className="text-last">{text}</p>
     </div>
   );
 };

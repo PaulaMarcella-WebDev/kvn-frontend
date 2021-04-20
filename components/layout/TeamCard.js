@@ -17,7 +17,6 @@ const TeamCard = ({ name, email, phone, fax, photo, position }) => {
         <p className={styles.text}>{position}</p>
         <p className={styles.text}>{email}</p>
         <p className={styles.text}>{phone}</p>
-        {/* <p className={styles.text}>{fax}</p> */}
       </div>
     </div>
   );

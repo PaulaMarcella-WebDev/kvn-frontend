@@ -54,8 +54,10 @@ mobile 569px
 }
 
 .text {
-  line-height: 1.5rem;
   margin-bottom: 2rem;
+  &-last {
+    margin-bottom: 0;
+  }
 }
 
 .btn {
@@ -93,6 +95,6 @@ mobile 569px
 // Desktop
 @media only screen and (min-width: 959px) {
   .container {
-    padding: 100px 220px;
+    padding: 80px 220px;
   }
 }
