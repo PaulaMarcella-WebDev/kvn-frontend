@@ -1,6 +1,6 @@
-import styles from "@/styles/Card.module.scss";
+import styles from "@/styles/TeamCard.module.scss";
 import Image from "next/image";
-const Card = ({ name, email, phone, fax, photo }) => {
+const TeamCard = ({ name, email, phone, fax, photo, position }) => {
   return (
     <div className={styles.card}>
       <div className={styles.imgcontainer}>
@@ -14,6 +14,7 @@ const Card = ({ name, email, phone, fax, photo }) => {
       </div>
       <div className={styles.content}>
         <h3 className={styles.title}>{name}</h3>
+        <p className={styles.text}>{position}</p>
         <p className={styles.text}>{email}</p>
         <p className={styles.text}>{phone}</p>
         {/* <p className={styles.text}>{fax}</p> */}
@@ -22,4 +23,4 @@ const Card = ({ name, email, phone, fax, photo }) => {
   );
 };
 
-export default Card;
+export default TeamCard;

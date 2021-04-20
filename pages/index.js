@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Header from "@/layout/Header";
 import Layout from "@/layout/Layout";
-import Card from "@/layout/Card";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
@@ -29,7 +28,6 @@ const Home = () => {
             <h2 className="title">Beispiele</h2>
             <button className="btn">Button Beispiel</button>
             <button className="btn outline">Button Outline</button>
-            <Card />
           </div>
         </section>
       </Layout>

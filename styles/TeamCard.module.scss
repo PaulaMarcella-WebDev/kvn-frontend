@@ -16,9 +16,16 @@
   overflow: hidden;
 }
 .content {
+  padding: 1rem 0;
   .title {
-    border-bottom: 2px solid $brandcolor;
-    margin: 1rem 0;
+    border-bottom: 1px solid $brandcolor;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+  }
+  .text {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-size: 13px;
   }
 }
 

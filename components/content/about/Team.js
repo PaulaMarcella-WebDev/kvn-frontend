@@ -2,7 +2,7 @@ import styles from "@/styles/Team.module.scss";
 import { useTranslation } from "next-i18next";
 
 import TeamMembers from "@/data/team";
-import Card from "@/layout/Card";
+import TeamCard from "@/layout/TeamCard";
 
 const Team = () => {
   const { t } = useTranslation(["about", "common"]);
@@ -13,15 +13,16 @@ const Team = () => {
           <span>{t("contact-persons-title")}</span>
         </h3>
         <div className={styles.teamgrid}>
-          {TeamMembers.map(({ name, email, phone, fax, photo }) => {
+          {TeamMembers.map(({ name, email, phone, fax, photo, position }) => {
             return (
-              <Card
+              <TeamCard
                 key={name}
                 name={name}
                 email={email}
                 phone={phone}
                 fax={fax}
                 photo={photo}
+                position={position}
               />
             );
           })}
