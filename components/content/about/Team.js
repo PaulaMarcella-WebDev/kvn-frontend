@@ -13,8 +13,17 @@ const Team = () => {
           <span>{t("contact-persons-title")}</span>
         </h3>
         <div className={styles.teamgrid}>
-          {TeamMembers.map((member) => {
-            return <Card key={member.name} member={member} />;
+          {TeamMembers.map(({ name, email, phone, fax, photo }) => {
+            return (
+              <Card
+                key={name}
+                name={name}
+                email={email}
+                phone={phone}
+                fax={fax}
+                photo={photo}
+              />
+            );
           })}
         </div>
       </div>

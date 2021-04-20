@@ -10,12 +10,10 @@
 }
 
 .imgcontainer {
-  width: content;
+  position: relative;
+  width: auto;
+  height: 340px;
   overflow: hidden;
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 }
 .content {
   .title {
