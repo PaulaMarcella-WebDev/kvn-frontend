@@ -1,0 +1,29 @@
+@import "./variables";
+
+.intro {
+  display: flex;
+  > div:first-child {
+    width: 50%;
+  }
+  > div:last-child {
+    width: 50%;
+    padding-left: 36px;
+  }
+  .listtitle {
+    font-weight: bolder;
+  }
+  .list {
+    list-style: none;
+    li {
+      padding-left: 30px;
+      margin: 10px 0 0;
+    }
+    svg {
+      fill: $brandcolor;
+      position: relative;
+      margin-left: -20px;
+      right: 10px;
+      top: -2px;
+    }
+  }
+}

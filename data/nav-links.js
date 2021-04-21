@@ -4,11 +4,13 @@ const NavLinks = [
     type: "dropdown",
     href: "href-about",
     sublinks: [
-      { title: "sublink-numbers", hash: "href-numbers" },
-      { title: "sublink-contactperson", hash: "href-contactperson" },
-      { title: "sublink-history", hash: "href-history" },
-      { title: "sublink-safety", hash: "href-safety" },
+      { title: "sublink-about", href: "href-about" },
       { title: "sublink-careers", href: "href-careers" }
+      // { title: "sublink-numbers", hash: "href-numbers" },
+      // { title: "sublink-contactperson", hash: "href-contactperson" },
+      // { title: "sublink-history", hash: "href-history" },
+      // { title: "sublink-safety", hash: "href-safety" },
+      // { title: "sublink-careers", href: "href-careers" }
     ]
   },
   {

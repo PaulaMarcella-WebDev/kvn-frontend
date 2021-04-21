@@ -6,15 +6,11 @@ const Safety = () => {
     <section id={t("common:href-safety")}>
       <div className="container">
         <div className="section-heading">
-          <span>Safety</span>
+          <span>{t("safety-title")}</span>
         </div>
-        <div className="text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          magnam laboriosam pariatur optio expedita quam saepe possimus quod non
-          minus dolorum cumque autem odit, voluptatibus eos itaque ducimus
-          quidem! Facilis adipisci nisi mollitia molestiae beatae dignissimos
-          sunt illo voluptas sapiente.
-        </div>
+        <p className="text">{t("safety-p1")}</p>
+        <p className="text">{t("safety-p2")}</p>
+        <p className="text">{t("safety-p3")}</p>
       </div>
     </section>
   );

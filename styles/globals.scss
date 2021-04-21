@@ -5,7 +5,7 @@ body {
   font-family: "Titillium Web", Verdana, sans-serif;
   color: $textcolor;
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 a {
@@ -28,7 +28,7 @@ mobile 569px
 
 .section-heading {
   margin-bottom: 4rem;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.06em;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -54,6 +54,7 @@ mobile 569px
 }
 
 .text {
+  font-size: 18px;
   margin-bottom: 2rem;
   &-last {
     margin-bottom: 0;

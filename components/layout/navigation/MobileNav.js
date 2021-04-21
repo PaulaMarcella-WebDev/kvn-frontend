@@ -73,7 +73,7 @@ const MobileNav = ({ isOpen }) => {
                       iconSet={iconSet}
                       color="#111"
                       size={13}
-                      icon="chevron-down"
+                      icon="dropdown"
                     />
                   </span>
                   {dropdownOpen[href] && (

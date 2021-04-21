@@ -1,8 +1,9 @@
 {
   "head-home-title": "kvn - Home",
 
-  "navlink-about": "About",
-  "href-about": "unternhemen",
+  "navlink-about": "Company",
+  "sublink-about": "About",
+  "href-about": "unternehmen",
   "sublink-numbers": "Numbers & Factus",
   "href-numbers": "zahlen-fakten",
   "sublink-contactperson": "Contactperson",

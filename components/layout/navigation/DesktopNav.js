@@ -27,7 +27,7 @@ const DesktopNav = () => {
                   iconSet={iconSet}
                   color="#111"
                   size={13}
-                  icon="chevron-down"
+                  icon="dropdown"
                 />
               </span>
               <DropdownLinks sublinks={sublinks} href={href} styles={styles} />

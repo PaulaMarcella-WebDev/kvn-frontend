@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "@/layout/Layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import ContactForm from "@/content/about/contact/ContactForm";
 const Contact = () => {
   const { t } = useTranslation(["contact"]);
   return (
@@ -16,6 +17,7 @@ const Contact = () => {
             <h1>{t("contact-intro-h1")}</h1>
           </div>
         </section>
+        <ContactForm />
       </Layout>
     </>
   );
