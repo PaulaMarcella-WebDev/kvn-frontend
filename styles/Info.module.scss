@@ -1,0 +1,19 @@
+@import "./variables";
+
+.info {
+  padding: 2rem;
+  .iconbox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    svg {
+      width: 80px;
+      fill: $brandcolor;
+    }
+    .text {
+      font-size: 20px;
+      margin-left: 2rem;
+    }
+  }
+}

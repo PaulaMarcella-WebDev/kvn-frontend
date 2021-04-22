@@ -1,8 +1,12 @@
 import Head from "next/head";
 import Layout from "@/layout/Layout";
+import PageHeader from "@/layout/PageHeader";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import ContactForm from "@/content/about/contact/ContactForm";
+import Team from "@/content/contact/Team";
+import Info from "@/content/contact/Info";
+const headerImg = "/headers/bluesky-header.jpg";
+
 const Contact = () => {
   const { t } = useTranslation(["contact"]);
   return (
@@ -12,12 +16,9 @@ const Contact = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <section id={t("contact-title")}>
-          <div className="container">
-            <h1>{t("contact-intro-h1")}</h1>
-          </div>
-        </section>
-        <ContactForm />
+        <PageHeader img={headerImg} />
+        <Info />
+        <Team />
       </Layout>
     </>
   );

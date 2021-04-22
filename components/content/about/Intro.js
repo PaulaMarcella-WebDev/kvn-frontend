@@ -13,9 +13,9 @@ const Intro = () => {
         <h1 className="section-heading">
           <span>{t("page-title")}</span>
         </h1>
+        <p className={styles.listtitle}>{t("list-title")}</p>
         <div className={styles.intro}>
           <div>
-            <p className={styles.listtitle}>{t("list-title")}</p>
             <ul className={styles.list}>
               <li>
                 <IcomoonReact
@@ -52,7 +52,7 @@ const Intro = () => {
             </ul>
           </div>
           <div>
-            <p className="text-last">{t("intro-p1")}</p>
+            <p className="text-last">{t("memberships-p1")}</p>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 {
   "contact-title": "Kontakt",
-  "contact-intro-h1": "Willkommen auf der Kontakt Seite",
+  "info-title": "Kontaktinformationen",
   "contact-intro-p1": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quia in illo autem animi debitis laudantium ad vel consequatur quasi!",
-  "contact-intro-p2": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quia in illo autem animi debitis laudantium ad vel consequatur quasi!"
+  "contact-intro-p2": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quia in illo autem animi debitis laudantium ad vel consequatur quasi!",
+  "team-section-heading": "Ansprechpartner"
 }

@@ -4,7 +4,6 @@ import PageHeader from "@/layout/PageHeader";
 
 import Intro from "@/content/about/Intro";
 import Numbers from "@/content/about/Numbers";
-import Team from "@/content/about/Team";
 import History from "@/content/about/History";
 import Safety from "@/content/about/Safety";
 
@@ -23,10 +22,9 @@ const About = () => {
       <Layout>
         <PageHeader img={headerImg} />
         <Intro />
-        <Numbers />
-        <Team />
-        <History />
         <Safety />
+        <Numbers />
+        <History />
       </Layout>
     </>
   );
