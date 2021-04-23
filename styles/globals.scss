@@ -61,6 +61,8 @@ mobile 569px
   }
 }
 
+// Button styles
+
 .btn {
   margin-bottom: 2rem;
   padding: 13px 31px;
@@ -79,8 +81,12 @@ mobile 569px
     background-color: $white;
     &:hover {
       background-color: $brandcolor-dark;
+      border-color: $brandcolor-dark;
       color: $white;
     }
+  }
+  &.fluid {
+    width: 100%;
   }
 }
 
@@ -93,9 +99,22 @@ mobile 569px
   background: $accentcolor;
 }
 
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
 // Desktop
 @media only screen and (min-width: 959px) {
   .container {
     padding: 80px 220px;
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 559px) {
+  .card-grid {
+    grid-template-columns: 1fr;
   }
 }
