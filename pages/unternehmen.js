@@ -15,11 +15,7 @@ const About = () => {
   const { t } = useTranslation(["about", "common"]);
   return (
     <>
-      <Head>
-        <title>{t("page-title")}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Layout>
+      <Layout metaTitle={t("about-title")}>
         <PageHeader img={headerImg} />
         <Intro />
         <Safety />

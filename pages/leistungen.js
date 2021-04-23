@@ -6,11 +6,7 @@ const Services = () => {
   const { t } = useTranslation(["services"]);
   return (
     <>
-      <Head>
-        <title>{t("services-title")}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Layout>
+      <Layout metaTitle={t("services-title")}>
         <section id={t("services-title")}>
           <div className="container">
             <h1>{t("services-intro-h1")}</h1>

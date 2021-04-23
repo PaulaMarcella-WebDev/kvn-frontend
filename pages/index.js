@@ -11,7 +11,7 @@ const Home = () => {
   const { t } = useTranslation(["home", "common"]);
   return (
     <>
-      <Layout metaTitle={t("meta-title")}>
+      <Layout metaTitle={t("home-title")}>
         <Header />
         <section id="home">
           <div className="container">

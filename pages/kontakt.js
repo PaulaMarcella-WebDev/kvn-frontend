@@ -11,11 +11,7 @@ const Contact = () => {
   const { t } = useTranslation(["contact"]);
   return (
     <>
-      <Head>
-        <title>{t("contact-title")}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Layout>
+      <Layout metaTitle={t("contact-title")}>
         <PageHeader img={headerImg} />
         <Info />
         <Team />
