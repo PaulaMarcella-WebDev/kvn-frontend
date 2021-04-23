@@ -1,4 +1,5 @@
-import Head from "next/head";
+import Link from "next/link";
+
 import Header from "@/layout/Header";
 import Layout from "@/layout/Layout";
 import Card from "@/layout/Card";
@@ -10,11 +11,7 @@ const Home = () => {
   const { t } = useTranslation(["home", "common"]);
   return (
     <>
-      <Head>
-        <title>{t("head-home-title")}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Layout>
+      <Layout metaTitle={t("meta-title")}>
         <Header />
         <section id="home">
           <div className="container">
@@ -28,21 +25,24 @@ const Home = () => {
           <div className="container dark-bg">
             <div className="card-grid">
               <Card photo={"fleet-card.jpg"}>
-                <h5 className="title">{t("fleet-box-title")}</h5>
+                <h3 className="title">{t("fleet-box-title")}</h3>
                 <p className="text">{t("fleet-box-text")}</p>
-                <button className="btn outline fluid">Button Outline</button>
+                <Link href={t("common:href-fleet")}>
+                  <a className="btn outline fluid">
+                    {t("common:sublink-fleet")}
+                  </a>
+                </Link>
               </Card>
               <Card photo={"contact-card.jpeg"}>
-                <h5 className="title">{t("contact-box-title")}</h5>
+                <h3 className="title">{t("contact-box-title")}</h3>
                 <p className="text">{t("contact-box-text")}</p>
-                <button className="btn outline fluid">Button Outline</button>
+                <Link href={t("common:href-contact")}>
+                  <a className="btn outline fluid">
+                    {t("common:navlink-contact")}
+                  </a>
+                </Link>
               </Card>
             </div>
-            <h1 className="section-heading">
-              <span>Abschnitt Überschrift</span>
-            </h1>
-            <h2 className="title">Beispiele</h2>
-            <button className="btn">Button Beispiel</button>
           </div>
         </section>
       </Layout>
