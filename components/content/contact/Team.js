@@ -9,9 +9,9 @@ const Team = () => {
   return (
     <section id={t("common:href-contactperson")}>
       <div className="container dark-bg">
-        <h3 className="section-heading">
+        <h2 className="section-heading">
           <span>{t("team-section-heading")}</span>
-        </h3>
+        </h2>
         <div className={styles.teamgrid}>
           {TeamMembers.map(({ name, email, phone, fax, photo, position }) => {
             return (
