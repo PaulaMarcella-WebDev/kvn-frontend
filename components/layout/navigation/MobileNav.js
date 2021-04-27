@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import Link from "next/link";
 import styles from "@/styles/MobileNavbar.module.scss";
-import NavLinks from "@/data/nav-links";
+import navLinks from "@/data/nav-links";
 import iconSet from "@/icons/selection.json";
 import DropdownLinks from "./DropdownLinks";
 import { convertToHref, activeLink } from "@/helpers";
@@ -54,7 +54,7 @@ const MobileNav = ({ isOpen }) => {
           exit="hidden"
           variants={variants}
         >
-          {NavLinks.map((link) => {
+          {navLinks.map((link) => {
             const { type, title, sublinks } = link;
             const href = convertToHref(t(link.href));
             if (type === "dropdown") {

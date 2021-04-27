@@ -1,7 +1,7 @@
 import styles from "@/styles/Team.module.scss";
 import { useTranslation } from "next-i18next";
 
-import TeamMembers from "@/data/team";
+import teamMembers from "@/data/team";
 import TeamCard from "@/layout/TeamCard";
 
 const Team = () => {
@@ -13,7 +13,7 @@ const Team = () => {
           <span>{t("team-section-heading")}</span>
         </h2>
         <div className={styles.teamgrid}>
-          {TeamMembers.map(({ name, email, phone, fax, photo, position }) => {
+          {teamMembers.map(({ name, email, phone, fax, photo, position }) => {
             return (
               <TeamCard
                 key={name}

@@ -1,4 +1,4 @@
-const NavLinks = [
+const navLinks = [
   {
     title: "navlink-about",
     type: "dropdown",
@@ -6,11 +6,6 @@ const NavLinks = [
     sublinks: [
       { title: "sublink-about", href: "href-about" },
       { title: "sublink-careers", href: "href-careers" }
-      // { title: "sublink-numbers", hash: "href-numbers" },
-      // { title: "sublink-contactperson", hash: "href-contactperson" },
-      // { title: "sublink-history", hash: "href-history" },
-      // { title: "sublink-safety", hash: "href-safety" },
-      // { title: "sublink-careers", href: "href-careers" }
     ]
   },
   {
@@ -18,11 +13,14 @@ const NavLinks = [
     type: "dropdown",
     href: "href-services",
     sublinks: [
-      { title: "sublink-fleet", href: "href-fleet" },
-      { title: "sublink-wind", href: "href-wind" },
       { title: "sublink-mobilecranes", hash: "href-mobilecranes" },
       { title: "sublink-heavyloads", hash: "href-heavyloads" },
-      { title: "sublink-platforms-forklifts", hash: "href-platforms-forklifts" }
+      {
+        title: "sublink-platforms-forklifts",
+        hash: "href-platforms-forklifts"
+      },
+      { title: "sublink-fleet", href: "href-fleet" },
+      { title: "sublink-wind", href: "href-wind" }
     ]
   },
   {
@@ -37,4 +35,4 @@ const NavLinks = [
   }
 ];
 
-export default NavLinks;
+export default navLinks;

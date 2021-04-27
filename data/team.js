@@ -1,4 +1,4 @@
-const TeamMembers = [
+const teamMembers = [
   {
     name: "Kai Giesker",
     position: "Kfm. Leitung",
@@ -49,4 +49,4 @@ const TeamMembers = [
   }
 ];
 
-export default TeamMembers;
+export default teamMembers;

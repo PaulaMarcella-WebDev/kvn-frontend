@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "@/styles/DesktopNavbar.module.scss";
-import NavLinks from "@/data/nav-links";
+import navLinks from "@/data/nav-links";
 import iconSet from "@/icons/selection.json";
 import { activeLink, convertToHref } from "@/helpers";
 import DropdownLinks from "./DropdownLinks";
@@ -14,7 +14,7 @@ const DesktopNav = () => {
   const router = useRouter();
   return (
     <div className={styles.nav}>
-      {NavLinks.map((link) => {
+      {navLinks.map((link) => {
         const { title, sublinks, type } = link;
         const href = convertToHref(t(link.href));
 

@@ -11,7 +11,7 @@ const Intro = () => {
     <section id={t("title")}>
       <div className="container">
         <h1 className="section-heading">
-          <span>{t("page-title")}</span>
+          <span>{t("about-title")}</span>
         </h1>
         <p className={styles.listtitle}>{t("list-title")}</p>
         <div className={styles.intro}>
